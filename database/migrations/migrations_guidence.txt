@@ -1,0 +1,15 @@
+MIGRATIONS GUIDENCE :
+
+Question : 
+How i add new table or column changes? countering an error on  migrating database table?
+Answer : 
+Please follow this instructions,
+- php artisan migrate:reset
+- make sure the table on mySQL database is get deleted
+- Copy and Paste all command below to the terminal on vs Code
+
+php artisan migrate --path=/database/migrations/2024_10_23_164009_create_roles_table.php
+php artisan migrate --path=/database/migrations/0001_01_01_000000_create_users_table.php
+php artisan migrate --path=/database/migrations/2024_10_23_164643_create_haris_table.php
+php artisan migrate --path=/database/migrations/2024_10_23_164700_create_shifts_table.php
+php artisan migrate --path=/database/migrations/2024_10_23_164715_create_penjadwalans_table.php
